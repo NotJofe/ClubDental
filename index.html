@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+     <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="Author" content="José Avila">
+    <meta name="Description" content="Responsive Web Site for Club Dental Perú">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Tittle -->
+    <title>.:Club Dental:. Oficial WebSite</title>
+    <!-- Fuente de letra -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- FavIcon -->
+    <link rel="icon" type="image/x-icon" href="./imgs/LogoCD.png">
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="">
+        <div class="button_cita">
+            <a href="https://wa.me/message/X5CB3TBID2WZB1" target="_blank" rel="noopener noreferrer">
+                <button><i class="bi bi-whatsapp iconresponsive"></i><p class="p-responsive"><i class="bi bi-whatsapp"></i> Reservar una cita <br> Sede San Juan de Miraflores</p></button>
+            </a>
+        </div>
+        <div class="">
+            <div class="container d-flex header_logo">
+                <div class="d-flex align-items-center">
+                    <a href="#inicio"><img src="./imgs/LogoSinFondo.png" alt="Logo_ClubDental" width="90px"></a>
+                    <h1 class="light_mode_text_shadow" id="headerh1">CLUB DENTAL</h1>
+                </div>
+                <div class="d-flex align-items-center flex-column header_DarkMode">
+                  <div class="d-flex aling-items-center justify-content-center">
+                    <div>
+                      <p>Modo Oscuro</p>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="darkmode-toggle"/>
+                      <label for="darkmode-toggle" onclick="DarkMode()">
+                    </div>
+                  </div>
+                    
+                </div>
+            </div>
+            <div>
+                <nav class="navbar navbar-expand-sm light_mode_section" id="navsection">
+                  <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                      <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                          <a class="nav-link active linkmenu" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active linkmenu" href="#aboutus">¿Quiénes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link active linkmenu" href="#servicios">Nuestro servicios</a>
+                        </li>
+                        <li class="nav-item d-flex">
+                          <a class="nav-link active linkmenu" href="#sedes">Sedes</a>
+                          <div class="dropdown">
+                            <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item dropdownitemsede" href="#offcanvasSJM" data-bs-toggle="offcanvas">San Juan de Miraflores</a></li>
+                              <li><a class="dropdown-item dropdownitemsede" href="#offcanvasSanBorja" data-bs-toggle="offcanvas">San Borja</a></li>
+                              <li><a class="dropdown-item dropdownitemsede" href="#offcanvasJesusMaria" data-bs-toggle="offcanvas">Jesús Maria</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+
+      <!-- Inicio -->
+        <section class="inicio d-flex justify-content-center aling-items-center flex-column" id="inicio">
+            <div>
+                <h1>Siempre queremos verte con una gran sonrisa</h1>
+                <p>En Club Dental, podrás encontrar........</p>
+            </div>
+        </section>
+        
+        <!-- Quienes Somos -->
+        <section class="container-fluid aboutus" id="aboutus">
+            <div class="d-flex justify-content-center aling-items-center">
+                <h1 class="light_mode_title" id="title">¿Quiénes Somos?</h1>
+            </div>
+            <div class="container d-flex aboutus_text">
+                <div class="">
+                    <p>Club Dental es una empresa de odontólogos peruanos orientados a brindar atención dental innovadora 
+                        que supere las expectativas de nuestros pacientes y mejore su calidad de vida. Contamos con los mas
+                        altos estándares de calidad en servicios odontológicos ya que tenemos un personal profesional
+                        permanentemente capacitado y la adecuada tecnología que nos permiten ofrecer a nuestros pacientes una
+                        atención personalizada, satisfaciendo sus mayores dudas y exigencias en cuanto a lo profesional se
+                        refiere.<br>Así mismo incursionamos en el mercado institucional para que las empresas puedan ofrecer
+                        y hacer conocer a sus colaboradores los servicios odontológicos de vanguardia con los que se cuenta
+                        en el mercado y al alcance de todos.</p>
+                </div>
+                <div class="d-flex flex-column">
+                  <div>
+                    <h2>Misión</h2>
+                    <p>Club Dental es un sistema de red de centros odontológicos conformada por un equipo profesional
+                        multidisciplinario que brinda a los pacientes servicios odontológicos especializados, con los más
+                        altos estándares de calidad, mediante el perfeccionamiento y capacitación permanente de su personal,
+                        con tecnología, ofreciendo atención con equidad, efectividad, calidad, honestidad y una clara
+                        vocación por la excelencia.</p>
+                  </div>
+                  <div>
+                    <h2>Visión</h2>
+                    <p>Club Dental tiene como visión ser la red de clínicas odontológicas más sólida y reconocida, altamente
+                        competitiva en el ámbito nacional y global con un alto índice de participación en el mercado
+                        institucional, con servicios de alta tecnología para la atención general y especializada,
+                        contribuyendo al mejoramiento y desarrollo de nuestra profesión mediante nuestra entrega y
+                        compromiso, para satisfacer al máximo las exigencias de nuestros pacientes e ir más allá de sus
+                        expectativas, garantizando el bienestar de nuestros pacientes y colaboradores.</p>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios CD -->
+        <section class="container-fluid servicios light_mode_section" id="servicios">
+            <div class="d-flex justify-content-center aling-items-center">
+                <h1>Nuestos Servicios</h1>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                  <!-- Servicio 1 -->
+                  <div class="columna col-12 col-md-4">
+                    <p class="servicio-title">Limpieza Dental</p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat volutpat tortor t, consectetur adipiscing elit. Aenean feugiat </p>
+                    <div class="badges-contenedor">
+                      <span class="badge text-bg-primary">HTML</span>
+                      <span class="badge text-bg-primary">CSS</span>
+                    </div>
+                  </div>
+                  <!-- Servicio 2 -->
+                  <div class="columna col-12 col-md-4 ">
+                    <p class="servicio-title">Ortodoncia</p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat volutpat tortor t, consectetur adipiscing elit. Aenean feugiat </p>
+                    <div class="badges-contenedor">
+                      <span class="badge text-bg-primary">HTML</span>
+                      <span class="badge text-bg-primary">CSS</span>
+                    </div>
+                  </div>
+                  <!-- Servicio 3 -->
+                  <div class="columna col-12 col-md-4 ">
+                    <p class="servicio-title">Cirugías</p>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat volutpat tortor t, consectetur adipiscing elit. Aenean feugiat </p>
+                    <div class="badges-contenedor">
+                      <span class="badge text-bg-primary">HTML</span>
+                      <span class="badge text-bg-primary">CSS</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <!-- Servicio 4 -->
+                    <div class="columna col-12 col-md-4 ">
+                      <p class="servicio-title">No c que más</p>
+                      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat volutpat tortor t, consectetur adipiscing elit. Aenean feugiat </p>
+                      <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">HTML</span>
+                        <span class="badge text-bg-primary">CSS</span>
+                      </div>
+                    </div>
+                    <!-- Servicio 5 -->
+                    <div class="columna col-12 col-md-4 ">
+                      <p class="servicio-title">Algo Dental</p>
+                      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat volutpat tortor t, consectetur adipiscing elit. Aenean feugiat </p>
+                      <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">HTML</span>
+                        <span class="badge text-bg-primary">CSS</span>
+                      </div>
+                    </div>
+                    <!-- Servicio 6 -->
+                    <div class="columna col-12 col-md-4 ">
+                      <p class="servicio-title">Saber más</p>
+                      <p> Visíta la página de colgate para conecer más información educativa para tu salud bucal</p>
+                      <div>
+                        <a href="https://www.colgateprofesional.com.pe/" target="_blank" rel="noopener noreferrer"><img src="./imgs/logo-colgate.png" alt="Logo de la empresa Colgate" class="logo-colgate" width="250px" height="90px"></a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </section>
+
+        <!-- Sedes -->
+        <section class="container nuestrassedes" id="sedes">
+          <div class="row">
+            <div class="col-md-4 col-12 text">
+              <h1>Nuestras Sedes</h1>
+              <p>Buscanos en nuestras distintas sedes que tenemos a lo largo de Lima. Mantén el cursor o presiona una de las imagenes para obtener más información</p>
+            </div>
+            <div class="col-md-8 col-12">
+              <div class="row">
+                <div class="card_sede col-lg-5 col-md-8 col-12 light_mode_boxshadow_card" id="cardsede">
+                  <img class="overlay_img" src="./imgs/Sedes1.jpg" alt="Sede San Juan de Miraflores">
+                  <h2>Sede San Juan de Miraflores</h2>
+                  <div class="overlay">
+                    <div class="overlay_button d-flex justify-content-center aling-items-center">
+                      <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasSJM" role="button" aria-controls="offcanvasExample">
+                        Saber más
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card_sede col-lg-5 col-md-8 col-12 light_mode_boxshadow_card" id="cardsede1">
+                  <img class="overlay_img" src="./imgs/Sedes2.jpg" alt="Sede San Borja">
+                  <h2>Sede San Borja</h2>
+                  <div class="overlay">
+                    <div class="overlay_button d-flex justify-content-center aling-items-center">
+                      <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasSanBorja" role="button" aria-controls="offcanvasExample">
+                        Saber más
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card_sede col-md-8 col-lg-5 col-12 light_mode_boxshadow_card" id="cardsede2">
+                  <img class="overlay_img" src="./imgs/ImgCarrusel3.jpg" alt="Sede Jesús María">
+                  <h2>Sede Jesús Maria</h2>
+                  <div class="overlay">
+                    <div class="overlay_button d-flex justify-content-center aling-items-center">
+                      <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasJesusMaria" role="button" aria-controls="offcanvasExample">
+                        Saber más
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Off Canvas Sedes -->
+          <div class="offcanvas offcanvas-start light_mode" tabindex="-1" id="offcanvasSJM" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Sede San Juan de Miraflores</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <p class="offcanvas_title">Doctores</p>
+                <ul>
+                  <li>Dr. Fernando Avila</li>
+                  <li>Dra. Chari Flores (Ortodoncia)</li>
+                  <li>Dr. Mauricio Ruiz</li>
+                </ul>
+                <p class="offcanvas_title">Contacto</p>
+                <p><i class="bi bi-telephone-fill"></i> Teléfono: 01 2763460</p>
+                <p><a href=""><i class="bi bi-whatsapp"></i></a> WhatsApp: 012763460</p>
+                <p class="offcanvas_title">Ubicación</p>
+                <p>Dirección: Av Pedro Silva 568, Zona B, San Juan de Miraflores (Altura de la cuadra 3 de la Av. San Juan)</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.1855109403596!2d-76.97366208583125!3d-12.167770047474606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b853ea063d51%3A0x62867b10f7e17e41!2sClub%20Dental%20(Sede%20San%20Juan%20de%20Miraflores)!5e0!3m2!1ses!2spe!4v1670983585186!5m2!1ses!2spe" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="offcanvas offcanvas-start light_mode" tabindex="-1" id="offcanvasSanBorja" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Sede San Borja</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" href=""></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <p class="offcanvas_title">Doctores</p>
+                <ul>
+                  <li>Dr. Rodrigo Franco</li>
+                </ul>
+                <p class="offcanvas_title">Contacto</p>
+                <p><i class="bi bi-telephone-fill"></i> Teléfono: 987012325</p>
+                <p><a href=""><i class="bi bi-whatsapp"></i></a> WhatsApp: ...</p>
+                <p class="offcanvas_title">Ubicación</p>
+                <p>Dirección: Av. Javier Prado Este 3010 Of. 101</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.367278849816!2d-76.99786098523799!3d-12.086989822548336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c7cc7b8bb44b%3A0xb3101144e47b584e!2sCLUB%20DENTAL%20SAN%20BORJA!5e0!3m2!1ses!2spe!4v1670991380180!5m2!1ses!2spe" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="offcanvas offcanvas-start light_mode" tabindex="-1" id="offcanvasJesusMaria" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Sede Jesús Maria</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <p class="offcanvas_title">Doctores</p>
+                <ul>
+                  <li>Dra. Kler Velásquez</li>
+                </ul>
+                <p class="offcanvas_title">Contacto</p>
+                <p><i class="bi bi-telephone-fill"></i> Teléfono: 01 4624268</p>
+                <p><a href=""><i class="bi bi-whatsapp"></i></a> WhatsApp: ...</p>
+                <p class="offcanvas_title">Ubicación</p>
+                <p>Dirección: Calle Tizón y Bueno 551 (Ent. Cdra. 16 y 17 de la Av. Brasil)</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.483547194648!2d-77.05292638255615!3d-12.079013499999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9decf00d87b%3A0x133ead32994f849!2sClub%20Dental%20Jes%C3%BAs%20Mar%C3%ADa!5e0!3m2!1ses!2spe!4v1670992303237!5m2!1ses!2spe" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer class="d-flex flex-column align-items-center justify-content-center light_mode_footer" id="footer">
+      <p class="footer-text text-center">En Club Dental te ofrecemos los mejores servicios para ti <br>Siguenos en nuestras redes sociales</p>
+      <div class="container-icons d-flex flex-wrap aling-items-center justify-content-center">
+        <a href="https://www.facebook.com/people/Club-Dental/100048827717678/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/club_dental_sjm/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="ttps://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+      <div class="footer-rights">
+        Creado por José Avila (2022) &#169;
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,397 @@
+html{
+    box-sizing: border-box;
+    margin: 0px;
+}
+:root{
+    --primary-color: #154A9A;
+    --secondary-color:#E61C0E;
+    --navbar-section-color:#86acdd;
+    --button-color:#6bebcb;
+    --footer-hover-color:#181D31;
+    --dark-mode-color:#1e1e1e;
+    --light-mode-color:#ffffff;
+}
+body{
+    transition: .5s all ease;
+}
+
+/* Light Mode Styles */
+.light_mode{
+    background-color: var(--light-mode-color);
+    color: black;
+}
+.light_mode_text_shadow{
+    text-shadow: 2px 2px 4px #585858;
+}
+.light_mode_section{
+    background-color: var(--navbar-section-color);
+    color: black;
+}
+.light_mode_title{
+    color: var(--primary-color);
+}
+.light_mode_footer{
+    background-color: var(--footer-hover-color);
+    color: white;
+}
+.light_mode_boxshadow_card{
+    box-shadow: 1px 1px 10px black;
+}
+/* Dark Mode Styles */
+.dark_mode{
+    background-color: var(--dark-mode-color);
+    color: white;
+}
+.dark_mode_text_shadow{
+    text-shadow: 2px 2px 4px #dfdddd;
+}
+.dark_mode_title{
+    color:var(--navbar-section-color);
+}
+.dark_mode_section{
+    background-color: var(--primary-color);
+    color: white;
+}
+.dark_mode_section_servicios{
+    background-color: var(--footer-hover-color);
+    color: white;
+}
+.dark_mode_footer{
+    background-color: #383838;
+    color: white;
+}
+.dark_mode_offcanvas{
+    background-color: #2e2e2e;
+    color: white;
+}
+.dark_mode_boxshadow_card{
+    box-shadow: 1px 1px 10px white;
+}
+
+/*------------General Styles------------*/
+
+/* Header Styles */
+.button_cita{
+    position: fixed;
+    right: 0;
+    z-index: 10;
+}
+.button_cita button{
+    background-color: var(--button-color);
+    padding: 10px 50px;
+    border:none;
+    border-radius: 0px 0px 0px 10px;
+}
+.button_cita button p{
+    padding-top: 5px;
+    margin-bottom: 1px;
+}
+.iconresponsive{
+    display: none;
+}
+.collapse{
+    justify-content: space-evenly;
+    font-weight: bold;
+    align-items: center;
+}
+.linkmenu{
+    margin: 0px 20px;
+}
+header h1{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: var(--primary-color);
+}
+header img{
+    margin-top: 20px;
+}
+header div ul a{
+    text-decoration: none;
+    margin: 10px 0px;
+    color: black;
+    transition: 0.5s;
+}
+header div ul a:hover{
+    color: var(--primary-color);
+}
+.header_DarkMode{
+    justify-content: end;
+    margin-top: 50px;
+}
+.header_logo{
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.header_DarkMode label {
+    width:80px;
+    height:30px;
+    position: relative;
+    display: block;
+    background: #ebebeb;
+    border-radius: 200px;
+    box-shadow: inset 0px 5px 15px rgba(0,0,0,0.4), inset 0px -5px 15px rgba(255,255,255,0.4);
+    cursor: pointer;
+}
+.header_DarkMode label:after {
+    content: "";
+    width:25px;
+    height: 25px;
+    position: absolute;
+    top:2px;
+    left:4px;
+    background: linear-gradient(180deg,#6c789e,var(--footer-hover-color));
+    border-radius: 180px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+}
+.header_DarkMode input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+.header_DarkMode input:checked + label {
+    background: #242424;
+}
+.header_DarkMode input:checked + label:after {
+    left:75px;
+    transform: translateX(-100%);
+    background: linear-gradient(180deg,#777,#3a3a3a);
+}
+.header_DarkMode label, label:after {
+    transition: 0.3s
+}
+.header_DarkMode label:active:after{ 
+    width: 25px; 
+}
+.header_DarkMode p{
+    margin: 0;
+    padding-top: 25px;
+    padding-right: 5px;
+}
+/* Inicio Styles */
+.inicio{
+    margin-top: 0px;
+    height: 600px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(rgba(5,7,12,0.50),rgba(5,7,12,0.50),rgba(5,7,12,0.50),rgba(5,7,12,0.50),rgba(5,7,12,0.50),rgba(5,7,12,0.40), rgba(5,7,12,0.30),rgba(5,7,12,0.20)), url(./ImgCarrusel2.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.inicio h1{
+    color: white;
+    font-size: 50px;
+    animation: fadeIn 2s linear ;
+    margin: 0px 10px;
+}
+.inicio p{
+    animation: fadeIn 2s linear ;
+}
+
+/* About Us Styles */
+.aboutus{
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.aboutus h1{
+    margin-bottom: 60px;
+}
+.aboutus_text{
+    align-items: center;
+}
+.aboutus_text div{
+    margin: 0px 10px;
+}
+.aboutus_text h2{
+    color: var(--secondary-color);
+}
+.aboutus p{
+    text-align: justify;
+}
+
+/* Servicios */
+.servicios{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.servicios h1{
+    margin-bottom: 40px;
+}
+.servicio-title{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.servicios .columna{
+    padding:20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+.servicios .columna:hover{
+    color: white;
+    background-color: var(--footer-hover-color);
+    transition: all 0.2s ease-in;
+}
+/* Nuestras Sedes */
+.nuestrassedes{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.nuestrassedes h1{
+    font-size: 60px;
+}
+.nuestrassedes .row{
+    align-items: center;
+    justify-content: center;
+}
+.card_sede{
+    border: solid black 1px;
+    margin: 5px;
+    padding: 0px;
+}
+.card_sede img{
+    width: 100%;
+    height: 100%;
+}
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.card_sede h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+.card_sede:hover .overlay{
+    opacity: 1;
+}
+.card_sede:hover .overlay_img{
+    opacity: 0.4;
+}
+.card_sede:hover{
+    position: relative;
+}
+.overlay_button a{
+    background-color: var(--footer-hover-color);
+    border: solid 1px var(--footer-hover-color);
+    font-size: 15px;
+    margin: 10px;
+}
+
+/* Off Canvas */
+.offcanvas-body{
+    text-align: left;
+}
+.offcanvas_title{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary-color);
+
+}
+
+/* Footer */
+footer{
+    min-height: 300px;
+    background-color: #181D31;
+    color: white;
+}
+footer p{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.container-icons a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border:2px solid white;
+    border-radius: 50%;
+    transition: 0.2s all ease-in;
+}
+.container-icons i{
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.2s all ease-in;
+}
+.container-icons a:hover{
+    background-color: white;
+    border: 2px solid #181D31;
+}
+.container-icons a:hover i{
+    color: #181D31;
+}
+.footer-rights{
+    font-size: 15px;
+    padding: 20px;
+    color: #aeaeae;
+}
+
+/* Media Queries */
+@media screen and (max-width: 992px){
+    .NuestrasSedes h1{
+        font-size: 50px;
+    }
+    .card_sede{
+        margin: 10px 5px;
+    }
+    .NuestrasSedes .row{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .card_sede h2{
+        font-size: 20px;
+    }
+    .overlay_button a{
+        font-size: 11px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .aboutus_text{
+        flex-direction: column;
+    }
+    .aboutus_text div{
+        margin: 10px 0px;
+        text-align: center;
+    }
+    .button_cita button{
+        padding: 10px 20px;
+    }
+    .overlay h2{
+        font-size: 25px;
+    }
+    .overlay_button a{
+        font-size: 15px;
+    }
+    
+}
+@media screen and (max-width: 576px){
+    .AboutUs_text{
+        flex-direction: column;
+    }
+    .iconresponsive{
+        display: block;
+        font-size: 30px;
+    }
+    .p-responsive{
+        display: none;
+    }
+}
+@media screen and (max-width: 502px) {
+    .header_DarkMode p{
+        padding-right: 5px;
+        padding-top: 15px;
+        text-align: right;
+    }
+}

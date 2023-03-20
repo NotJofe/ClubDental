@@ -387,6 +387,9 @@ footer p{
     .p-responsive{
         display: none;
     }
+    .NuestrasSedes{
+        
+    }
 }
 @media screen and (max-width: 502px) {
     .header_DarkMode p{

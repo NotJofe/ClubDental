@@ -52,15 +52,3 @@ document.getElementById("buttonSJM").addEventListener("click", function() {
     }
   });
 
-const mapa = document.getElementById("mapSB");
-function ajustarContenido(){
-  const anchoVentana = window.innerWidth;
-  if(anchoVentana < 768){
-    mapa.style.width = "300"
-  }
-  else if(anchoVentana < 400){
-    mapa.setAttribute('width', '300')
-  }
-}
-window.addEventListener("load", ajustarContenido);
-window.addEventListener("resize", ajustarContenido);

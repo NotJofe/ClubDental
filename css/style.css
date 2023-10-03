@@ -179,12 +179,15 @@ header div ul a:hover{
 }
 .inicio h1{
     color: white;
-    font-size: 50px;
+    font-size: 60px;
     animation: fadeIn 2s linear ;
-    margin: 0px 10px;
+    margin: 10px 10px;
 }
 .inicio p{
     animation: fadeIn 2s linear ;
+    font-size: 20px;
+    padding: 0 100px;
+
 }
 
 /* About Us Styles */
@@ -235,11 +238,15 @@ header div ul a:hover{
     background-color: var(--footer-hover-color);
     transition: all 0.2s ease-in;
 }
+
 /* Servicios */
 .service{
     padding: 80px 0px;
     text-align: center;
     
+}
+.service p{
+    font-size: 20px;
 }
 .service_containers{
     display: flex;
@@ -277,6 +284,9 @@ header div ul a:hover{
 }
 .nuestrassedes h1{
     font-size: 60px;
+}
+.nuestrassedes div div p{
+    font-size: 20px;
 }
 .nuestrassedes .row{
     align-items: center;
@@ -319,12 +329,6 @@ header div ul a:hover{
 
 
 
-.closebutton_sede button{
-    position: relative;
-    top:-40px;
-    left: calc(75vh - 0px);
-    scale: 1.5;
-}
 
 #sedeSJM, #sedeJM, #sedeSB{
     display: none;
@@ -352,6 +356,10 @@ header div ul a:hover{
 }
 .sedeContainer1 p, .sedeContainer2 p {
     font-size: 18px;
+}
+
+.mapresponsive{
+   display: none; 
 }
 /*PRUEBA*/
 
@@ -395,6 +403,11 @@ footer p{
     padding: 20px;
     color: #aeaeae;
     text-align: center;
+}
+.footer-rights p{
+    font-size: 18px;
+    margin: 5px;
+    padding: 0;
 }
 
 /* Media Queries */
@@ -440,6 +453,13 @@ footer p{
     .NuestrasSedes{
         margin:10px;
     }
+    .map{
+        display: none;
+    }
+    .mapresponsive{
+        display: block; 
+     }
+
 }
 @media screen and (max-width: 502px) {
     .header_DarkMode p{
